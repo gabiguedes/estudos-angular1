@@ -6,18 +6,23 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ListaProdutoComponent } from './lista-produto/lista-produto.component';
 import { RouterModule } from '@angular/router';
+import { ProdutosAlertasComponent } from './produtos-alertas/produtos-alertas.component';
+import { ProdutosDetalhesComponent } from './produtos-detalhes/produtos-detalhes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopBarComponent,
-    ListaProdutoComponent
+    ListaProdutoComponent,
+    ProdutosAlertasComponent,
+    ProdutosDetalhesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot([
       { path: '', component: ListaProdutoComponent },
+      { path: 'produtos/:produtoId', component: ProdutosDetalhesComponent },
     ])
   ],
   providers: [],
