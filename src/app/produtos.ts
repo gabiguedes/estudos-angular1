@@ -21,6 +21,6 @@ export const produtos = [
         id: 3,
         nome: 'Nokia',
         preco: 299,
-        descricao: 'top'
+        descricao: ''
     },
 ];
